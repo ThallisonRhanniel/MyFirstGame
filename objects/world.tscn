@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxh655vx04rip"]
+
+[ext_resource type="PackedScene" uid="uid://bbte87wr7fp8j" path="res://objects/goku.tscn" id="1_xmobw"]
+[ext_resource type="Script" path="res://objects/goku.gd" id="2_h54do"]
+[ext_resource type="PackedScene" uid="uid://bfdpag6efmbpa" path="res://objects/caminho_da_serpente.tscn" id="2_wvwga"]
+[ext_resource type="PackedScene" uid="uid://yb4tpp36rl1j" path="res://objects/escamas.tscn" id="3_63oxs"]
+
+[node name="world" type="Node2D"]
+
+[node name="Objetos" type="Node2D" parent="."]
+
+[node name="Goku" parent="Objetos" instance=ExtResource("1_xmobw")]
+position = Vector2(14, 147)
+script = ExtResource("2_h54do")
+
+[node name="Caminho" type="Node2D" parent="."]
+
+[node name="CaminhoDaSerpente" parent="Caminho" instance=ExtResource("2_wvwga")]
+position = Vector2(37, 165)
+
+[node name="CaminhoDaSerpente2" parent="Caminho" instance=ExtResource("2_wvwga")]
+position = Vector2(127, 165)
+
+[node name="CaminhoDaSerpente3" parent="Caminho" instance=ExtResource("2_wvwga")]
+position = Vector2(217, 165)
+
+[node name="CaminhoDaSerpente4" parent="Caminho" instance=ExtResource("2_wvwga")]
+position = Vector2(307, 165)
+
+[node name="Escamas2" parent="Caminho" instance=ExtResource("3_63oxs")]
+position = Vector2(45, 164)
+
+[node name="Escamas" parent="Caminho" instance=ExtResource("3_63oxs")]
+position = Vector2(134, 164)
+
+[node name="Escamas3" parent="Caminho" instance=ExtResource("3_63oxs")]
+position = Vector2(223, 164)
+
+[node name="Escamas4" parent="Caminho" instance=ExtResource("3_63oxs")]
+position = Vector2(312, 164)
