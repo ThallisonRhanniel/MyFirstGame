@@ -18,7 +18,7 @@ func _physics_process(delta):
 	
 	
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() or Input.is_action_just_pressed("ui_up"):
 		velocity.y = JUMP_VELOCITY
 
 	#look_at(get_global_mouse_position())
